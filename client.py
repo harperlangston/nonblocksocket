@@ -47,8 +47,7 @@ def main():
     print("Client connection error to : (" + dest_host + ","  + str(port) + ")" + str(sys.exc_info()))
     sys.exit(-1)
 
-  print("T7ls 
-ype 'EOF' to stop")
+  print("Type 'EOF' to stop")
   sr.send_message(sock, begin_connection_message)
   remain_open = sr.handle_response(sock)
 
